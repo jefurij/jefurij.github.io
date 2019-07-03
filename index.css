@@ -1,0 +1,86 @@
+.container {
+    display: grid;
+    height: 600px;
+    width: 100%;
+    margin-left: 170px;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    /* visual display of the grid*/
+    "pic learn-more learn-more"
+    "about-me about-me about-me"
+    "work work work"
+    "interest achieve resume" 
+
+  }
+
+  #pic {
+      grid-area: pic;
+      border: dashed lightgrey 1px;
+  }
+
+  #learn-more {
+      grid-area: learn-more;
+      border: dashed lightgrey 1px;
+  }
+
+  #about-me {
+      grid-area: about-me;
+      border: dashed lightgrey 1px;
+    
+  }
+
+  #work {
+      grid-area: work;
+      border: dashed lightgrey 1px;
+  }
+
+  #interest {
+      grid-area: interest;
+      border: dashed lightgrey 1px;
+  }
+
+  #achieve {
+      grid-area: achieve;
+      border: dashed lightgrey 1px;
+  }
+
+  #resume {
+      grid-area: resume;
+      border: dashed lightgrey 1px;
+  }
+  .nav {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      justify-content: space-evenly;  
+      height: 100%;
+      width: 160px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #000;
+  }
+  
+  /* OTHER STYLES */
+  
+  body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+
+  
+  .header {
+    background-color: #1EAAFC;
+    background-image: linear-gradient(160deg, #6C52D9 0%, #9B8AE6 127%);
+  }
+  
+  
+  .footer {
+    background-color: #6C52D9;
+    background-image: linear-gradient(160deg, #6C52D9 0%, #9B8AE6 127%);
+  }
