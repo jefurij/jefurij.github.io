@@ -1,9 +1,9 @@
 .container {
     display: grid;
-    height: 600px;
+    height: 900px;
     width: 100%;
-    margin-left: 170px;
-    grid-gap: 1rem;
+    margin-left: 73px;
+    grid-gap: 0;
     grid-template-areas: 
     /* visual display of the grid*/
     "pic learn-more learn-more"
@@ -11,55 +11,100 @@
     "work work work"
     "interest achieve resume" 
 
-  }
+    }  
+  .round-pic {
+      border-radius: 50%;
+      height: 650px;
+      width: 650px;
+      overflow: hidden;
+      border:black solid 1px;
+  
+    }
 
   #pic {
+      margin-left: auto;
+      margin-right: auto;
       grid-area: pic;
-      border: dashed lightgrey 1px;
+      border: dashed rgb(235, 22, 22) 1px;
+      background-color: #E9E581
   }
 
   #learn-more {
+      text-decoration-color: rgb(221, 192, 192);
+      background-color: #DE1B1B;
+      padding: 850px 0;
       grid-area: learn-more;
       border: dashed lightgrey 1px;
   }
 
   #about-me {
+      text-align: center;
+      background-color: #f9F3c5;
       grid-area: about-me;
       border: dashed lightgrey 1px;
     
   }
 
   #work {
+      text-align: center;
       grid-area: work;
       border: dashed lightgrey 1px;
+      background: #E9E581
   }
 
-  #interest {
+  #interests {
+      text-decoration: none;
+      text-align: center;
       grid-area: interest;
       border: dashed lightgrey 1px;
+      background: #646F6F;
+
   }
 
-  #achieve {
+  #achievements { 
+      text-align: center;
       grid-area: achieve;
       border: dashed lightgrey 1px;
+      background: #f9F3c5
+
+  }
+    
+  #achievements {
+      text-decoration: none;
+
   }
 
   #resume {
+      text-align: center;
       grid-area: resume;
       border: dashed lightgrey 1px;
+      background: #DE1B1B
+      
   }
   .nav {
       display: flex;
       flex-direction: column;
       padding: 20px;
+      justify-content: left;
       justify-content: space-evenly;  
       height: 100%;
-      width: 160px;
+      width: 60px;
       position: fixed;
       z-index: 1;
       top: 0;
       left: 0;
-      background-color: #000;
+      background-color: #87AAB9; 
+  }
+
+  .nav {
+    color: rgb(245, 111, 70); 
+    text-decoration: none;
+    
+  }
+
+  .interests {
+      text-decoration: none;
+
   }
   
   /* OTHER STYLES */
@@ -72,15 +117,3 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
   
-
-  
-  .header {
-    background-color: #1EAAFC;
-    background-image: linear-gradient(160deg, #6C52D9 0%, #9B8AE6 127%);
-  }
-  
-  
-  .footer {
-    background-color: #6C52D9;
-    background-image: linear-gradient(160deg, #6C52D9 0%, #9B8AE6 127%);
-  }
