@@ -1,0 +1,93 @@
+.item1 {
+grid-area: container;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'container';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+    #learn-more {
+        text-align: center;
+        background-color: white;
+        padding: 75px 0;
+        grid-area: learn-more;
+        border: dashed #DE1B1B 1px;
+    }
+  
+    #about-me {
+        text-align: center;
+        background-color: rgb(201, 240, 245);
+        grid-area: about-me;
+        border: dashed lightgrey 1px;
+      
+    }
+  
+    #work {
+        text-align: center;
+        grid-area: work;
+        border: dashed lightgrey 1px;
+        background: whitesmoke;
+    }
+  
+    #interests {
+        text-decoration: none;
+        text-align: center;
+        grid-area: interests;
+        border: dashed lightgrey 1px;
+        background: whitesmoke;
+  
+    }
+  
+    #achievements {
+        grid-auto-columns: 50px; 
+        text-decoration: none;
+        text-align: center;
+        grid-area: achievements;
+        border: dashed lightgrey 1px;
+        background: whitesmoke;
+  
+    }
+      
+    #achievements {
+        text-decoration: none;
+  
+    }
+  
+    #resume {
+        text-align: center;
+        grid-area: resume;
+        border: dashed lightgrey 1px;
+        background: #DE1B1B
+        
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: left;
+        justify-content: space-evenly;  
+        height: 100%;
+        width: 60px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #87AAB9; 
+    }
+  
+    .nav {
+      color: rgb(245, 111, 70); 
+      text-decoration: none;
+      
+    }

@@ -1,14 +1,16 @@
 .container {
     display: grid;
-    
+    height: 600px;
+    width: 100%;
+    margin-left: 73px;
     grid-gap: 0;
     grid-template-areas: 
     /* visual display of the grid*/
-    " . pic . "
-    "learn-more learn-more learn-more"
+    "pic learn-more learn-more"
     "about-me about-me about-me"
-    "interests achievements resume" 
     "work work work"
+    "interest achieve resume" 
+
     }
     
   .round-pic {
@@ -21,48 +23,43 @@
     }
 
   #pic {
-      
+      display: flex;
+      flex-direction: row;
+      image-orientation: -1px;
+      justify-content: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       grid-area: pic;
-      padding-top: 25px;
-      padding-right: 30px;
-      padding-bottom: 50px;
-      padding-left: 140px;
       background: white; 
       
     }
 
   #learn-more {
-      padding-bottom: 75px;
       text-align: center;
       background-color: white;
+      padding: 75px 0;
       grid-area: learn-more;
-      
+      border: dashed #DE1B1B 1px;
   }
 
   #about-me {
-      padding-left: 60px;
-      padding-right: 30px;
-      padding-top: 75px;
-      padding-bottom: 75px;
       text-align: center;
       background-color: rgb(201, 240, 245);
       grid-area: about-me;
-      
+      border: dashed lightgrey 1px;
     
   }
 
   #work {
-      padding-top: 75px;
-      padding-bottom: 75px;
       text-align: center;
       grid-area: work;
       border: dashed lightgrey 1px;
       background: whitesmoke;
   }
- 
+
   #interests {
-      padding-top: 75px;
-      padding-bottom: 50px;
+      text-decoration: none;
       text-align: center;
       grid-area: interests;
       border: dashed lightgrey 1px;
@@ -71,28 +68,31 @@
   }
 
   #achievements {
-      padding-top: 75px;
-      text-align: center;
+      grid-auto-columns: 50px; 
       text-decoration: none;
-      list-style-position: inside;
+      text-align: center;
       grid-area: achievements;
       border: dashed lightgrey 1px;
       background: whitesmoke;
 
   }
+    
+  #achievements {
+      text-decoration: none;
+
+  }
 
   #resume {
-      padding-top: 75px;
       text-align: center;
       grid-area: resume;
       border: dashed lightgrey 1px;
-      background: whitesmoke;
+      background: #DE1B1B
       
   }
   .nav {
       display: flex;
       flex-direction: column;
-      padding: 10px; 
+      padding: 20px;
       justify-content: left;
       justify-content: space-evenly;  
       height: 100%;
@@ -110,11 +110,17 @@
     
   }
 
+  .interests {
+      text-decoration: none;
+
+  }
   
   /* OTHER STYLES */
   
   body {
     background-color: #fff;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
